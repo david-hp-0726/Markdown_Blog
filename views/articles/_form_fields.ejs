@@ -1,0 +1,15 @@
+<div class="form-group mb-3">
+    <label for="title"><h5>Title</h5></label>
+    <input required type="text" name="title" id="title" value="<%=article.title%>" class="form-control border-dark border-1">
+</div>
+<div class="form-group mb-3">
+    <label for="description"><h5>Description</h5></label>
+    <textarea name="description" id="description" class="form-control border-dark border-1"><%=article.description%></textarea>
+</div>
+<div class="form-group mb-3">
+    <label for="markdown"><h5>Markdown</h5></label>
+    <textarea name="markdown" id="markdown" class="form-control border-dark border-1" rows="5"><%=article.markdown%></textarea>
+</div>
+
+<a href="/" class="btn btn-secondary border-dark border-1">Cancel</a>
+<button type="submit" class="btn btn-primary border-dark border-1">Save</button>
